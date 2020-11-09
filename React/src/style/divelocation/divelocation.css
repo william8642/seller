@@ -1,0 +1,94 @@
+.locationcontent {
+  color: #ffff;
+}
+
+.locationcontent .locationh1 {
+  color: #ffff;
+  margin: 30px 0 30px 0;
+}
+
+.locationcontent .locationh2 {
+  color: #ffff;
+}
+
+.locationcontent .fontdefultcolor {
+  color: #ffff;
+}
+
+.locationcontent .divelocussection {
+  margin: 100px 0 100px 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .locationcontent .divelocussection {
+    margin: 10px 0 10px 0;
+  }
+}
+
+.locationcontent .locationcard {
+  background-color: #559534;
+}
+
+.locationcontent .locationlist li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.locationcontent .locationlist li a {
+  font-size: 16px;
+  color: #ffff;
+}
+
+.locationcontent .divemap {
+  height: 550px;
+  z-index: 0;
+}
+
+.locationcontent .locusinfo ul li {
+  margin-top: 15px;
+  list-style: none;
+}
+
+.locationcontent .regionwether {
+  min-height: 100px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.locationcontent .nav-item {
+  color: #ffff !important;
+}
+
+.locationcontent .weathertable {
+  overflow-x: auto;
+  max-width: 100%;
+  max-height: 100%;
+  table-layout: auto;
+}
+
+.locationcontent .weathertable thead th {
+  height: 50px;
+  min-width: 150px;
+  background-color: #559534;
+  text-align: center;
+  color: #ffff;
+}
+
+.locationcontent .weathertable tr td {
+  white-space: normal !important;
+  height: 50px;
+  min-width: 150px;
+  background-color: #559534;
+  text-align: center;
+  color: #ffff;
+}
+
+.locationcontent .weathertable tr .weekweatherdate {
+  max-width: 150px;
+}
+
+.locationcontent .weathertable tr .WeatherDescription {
+  text-align: left;
+  color: #ffff;
+}
+/*# sourceMappingURL=divelocation.css.map */
