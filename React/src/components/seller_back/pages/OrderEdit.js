@@ -23,7 +23,7 @@ function OrderEdit(props) {
         setDataLoading(true)
     
         // 連接的伺服器資料網址
-        const url = 'http://localhost:3000/get-db/'+ sid
+        const url = 'http://localhost:3000/seller/get-db/'+ sid
     
         // 注意header資料格式要設定，伺服器才知道是json格式
         const request = new Request(url, {
@@ -74,7 +74,7 @@ function OrderEdit(props) {
         const newData = { customer, amount, time, shippingmethods, status}
     
         // 連接的伺服器資料網址
-        const url = 'http://localhost:3000/get-db/:sid'
+        const url = 'http://localhost:3000/seller/get-db/:sid'
     
         // 注意資料格式要設定，伺服器才知道是json格式
         const request = new Request(url, {
@@ -126,7 +126,7 @@ const newData = {
 const fd = JSON.stringify(newData)
 console.log(fd)
 // const fd = new FormData(formData);
-const res = await fetch('http://localhost:3000/edit/'+sid, {
+const res = await fetch('http://localhost:3000/seller/edit/'+sid, {
   method: 'post',
   headers: new Headers({
     'Accept': 'application/json',
@@ -212,15 +212,18 @@ const res = await fetch('http://localhost:3000/edit/'+sid, {
         </div>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">出貨狀態</label>
-          <input
-            name = "Status"
-            type="text"
-            className="form-control"
-            value={status}
-            onChange={(event) => {
-              setStatus(event.target.value)
-            }}
-          />
+          <select
+          className="form-control"
+          value={status}      
+          onChange={(event) => {
+          setStatus(event.target.value)
+          }}
+          >
+            <option value="0">未出貨</option>
+            <option value="1">已出貨</option>
+            
+
+          </select>
         </div>
     
     

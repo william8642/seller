@@ -11,11 +11,14 @@ const PaginacionTabla = ({ postsPerPage, totalPosts, paginate }) => {
   return (
     <nav>
       <ul className="pagination">
+      <li><a href="#">&laquo;</a></li>
         {pageNumbers.map((number) => (
           <Pagination.Item key={number}>
-            <a onClick={() => paginate(number)}>{number}</a>
+            <a onClick={() => paginate(number)}>
+            {number}</a>
           </Pagination.Item>
         ))}
+        <li><a href="#">&raquo;</a></li>
       </ul>
     </nav>
   )

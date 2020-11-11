@@ -12,7 +12,7 @@ function App(props) {
   return (
     <React.Fragment>
       <Router>
-        <Navgation />
+        {/* <Navgation /> */}
         <Container />
         <Footer />
       </Router>

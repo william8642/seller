@@ -18,7 +18,7 @@ import { orderReducer } from './reducers/order/order_Reducers'
 import { memberReducer } from './reducers/member/member_Reducers'
 import { sellerReducer } from './reducers/seller/sellerReducer'
 import { commentReducer } from './reducers/comment/comment_Reducers'
-//引入中介軟體
+// 引入中介軟體
 import thunk from 'redux-thunk'
 
 //合併reducers

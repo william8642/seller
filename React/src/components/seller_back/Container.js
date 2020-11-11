@@ -13,7 +13,7 @@ import Order from './pages/Order'
 import OrderEdit from './pages/OrderEdit'
 import Class from './pages/Class'
 
-function Container() {
+function Container(props) {
   
   return (
     <>
